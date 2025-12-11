@@ -69,7 +69,7 @@ Download `ColoX.min.js` from the `JS/` folder and include it in your project:
 ### Option 2: CDN (Coming Soon)
 
 ```html
-<script src="https://cdn.example.com/colox/latest/colox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/GiladMeirson/ColoX/JS/ColoX.min.js"></script>
 ```
 
 ### Option 3: NPM (Coming Soon)
