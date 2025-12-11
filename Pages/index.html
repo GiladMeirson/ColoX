@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ColoX - The Ultimate JavaScript Color Library</title>
+        <meta name="description"
+            content="A powerful, lightweight, zero-dependency JavaScript library for advanced color manipulation. Mix, blend, and transform colors with ease.">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Fira+Code:wght@400;500&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <a href="#" class="logo"><img style="width: 50%;" src="../assets/logo.png" alt=""></a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#playground">Playground</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#api">API</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="github-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge">
+                    ✨ Zero Dependencies • Lightning Fast
+                </div>
+                <h1>Color Manipulation<br>Made Simple</h1>
+                <p class="hero-subtitle">
+                    The most intuitive JavaScript library for color operations.
+                    Mix, blend, transform, and generate beautiful color palettes
+                    with just a few lines of code.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">Dependencies</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">&lt;5kb</div>
+                        <div class="stat-label">Gzipped</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">20+</div>
+                        <div class="stat-label">Methods</div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#playground" class="btn btn-primary">
+                        Try It Now
+                        <svg width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#installation"
+                        class="btn btn-secondary">Documentation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Why ColoX?</div>
+                    <h2 class="section-title">Built for Modern Development</h2>
+                    <p class="section-subtitle">Everything you need to work with
+                        colors, nothing you don't.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Zero Dependencies</h3>
+                        <p>Completely standalone. No npm bloat, no security
+                            vulnerabilities from third-party packages. Just
+                            pure, efficient JavaScript.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Universal Format Support</h3>
+                        <p>Work seamlessly with HEX, RGB, RGBA, HSL, and HSLA.
+                            Convert between formats instantly with automatic
+                            detection.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔢</div>
+                        <h3>Color Mathematics</h3>
+                        <p>Add, subtract, multiply, and mix colors like numbers.
+                            Intuitive operations that feel natural and produce
+                            beautiful results.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌈</div>
+                        <h3>Palette Generation</h3>
+                        <p>Generate shades, scales, and harmonious color
+                            palettes automatically. Perfect for design systems
+                            and theming.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Precise Control</h3>
+                        <p>Lighten, darken, saturate, and desaturate with exact
+                            percentages. Full control over every aspect of your
+                            colors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Blazing Fast</h3>
+                        <p>Optimized algorithms for maximum performance. No
+                            unnecessary computations, just raw speed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Playground -->
+        <section id="playground" class="playground-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Interactive Demo</div>
+                    <h2 class="section-title">See It In Action</h2>
+                    <p class="section-subtitle">Try all the color operations
+                        live. Pick colors and watch the magic happen.</p>
+                </div>
+
+                <div class="playground-tabs">
+                    <button class="tab-btn active" data-tab="plus">Plus
+                        (+)</button>
+                    <button class="tab-btn" data-tab="minus">Minus (−)</button>
+                    <button class="tab-btn" data-tab="mix">Mix</button>
+                    <button class="tab-btn"
+                        data-tab="multiply">Multiply</button>
+                    <button class="tab-btn" data-tab="lighten">Lighten</button>
+                    <button class="tab-btn" data-tab="darken">Darken</button>
+                    <button class="tab-btn"
+                        data-tab="saturate">Saturate</button>
+                    <button class="tab-btn" data-tab="shades">Shades</button>
+                    <button class="tab-btn" data-tab="scale">Scale</button>
+                    <button class="tab-btn" data-tab="random">Random</button>
+                </div>
+
+                <div class="playground-content">
+                    <!-- Plus Operation -->
+                    <div class="operation-demo active" id="demo-plus">
+                        <h3 class="operation-title">Color Addition</h3>
+                        <p class="operation-desc">Blend two colors together by
+                            averaging their RGB values</p>
+                        <div class="color-equation">
+                            <div class="color-input-group">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="plus-color1"
+                                        value="#6366f1">
+                                </div>
+                                <span class="color-hex"
+                                    id="plus-hex1">#6366f1</span>
+                            </div>
+                            <span class="operator-symbol">+</span>
+                            <div class="color-input-group">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="plus-color2"
+                                        value="#ec4899">
+                                </div>
+                                <span class="color-hex"
+                                    id="plus-hex2">#ec4899</span>
+                            </div>
+                            <span class="operator-symbol">=</span>
+                            <div class="color-input-group">
+                                <div class="result-color"
+                                    id="plus-result"></div>
+                                <span class="color-hex"
+                                    id="plus-result-hex">#a855c5</span>
+                            </div>
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="plus-code">const color1 = new
+                                Color("#6366f1");
+                                const color2 = new Color("#ec4899");
+                                const result = color1.plus(color2);
+                                // Result: #a855c5</code>
+                        </div>
+                    </div>
+
+                    <!-- Minus Operation -->
+                    <div class="operation-demo" id="demo-minus">
+                        <h3 class="operation-title">Color Subtraction</h3>
+                        <p class="operation-desc">Subtract one color from
+                            another</p>
+                        <div class="color-equation">
+                            <div class="color-input-group">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="minus-color1"
+                                        value="#ffffff">
+                                </div>
+                                <span class="color-hex"
+                                    id="minus-hex1">#ffffff</span>
+                            </div>
+                            <span class="operator-symbol">−</span>
+                            <div class="color-input-group">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="minus-color2"
+                                        value="#ff0000">
+                                </div>
+                                <span class="color-hex"
+                                    id="minus-hex2">#ff0000</span>
+                            </div>
+                            <span class="operator-symbol">=</span>
+                            <div class="color-input-group">
+                                <div class="result-color"
+                                    id="minus-result"></div>
+                                <span class="color-hex"
+                                    id="minus-result-hex">#00ffff</span>
+                            </div>
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="minus-code">const color1 = new
+                                Color("#ffffff");
+                                const color2 = new Color("#ff0000");
+                                const result = color1.minus(color2);
+                                // Result: #00ffff</code>
+                        </div>
+                    </div>
+
+                    <!-- Mix Operation -->
+                    <div class="operation-demo" id="demo-mix">
+                        <h3 class="operation-title">Color Mixing</h3>
+                        <p class="operation-desc">Mix two colors with adjustable
+                            ratio (0 to 1)</p>
+                        <div class="color-equation">
+                            <div class="color-input-group">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="mix-color1"
+                                        value="#3b82f6">
+                                </div>
+                                <span class="color-hex"
+                                    id="mix-hex1">#3b82f6</span>
+                            </div>
+                            <span class="operator-symbol">⟷</span>
+                            <div class="color-input-group">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="mix-color2"
+                                        value="#f59e0b">
+                                </div>
+                                <span class="color-hex"
+                                    id="mix-hex2">#f59e0b</span>
+                            </div>
+                            <span class="operator-symbol">=</span>
+                            <div class="color-input-group">
+                                <div class="result-color" id="mix-result"></div>
+                                <span class="color-hex"
+                                    id="mix-result-hex">#989080</span>
+                            </div>
+                        </div>
+                        <div class="slider-group"
+                            style="max-width: 400px; margin: 2rem auto 0;">
+                            <label>Ratio: <span
+                                    id="mix-ratio-value">0.5</span></label>
+                            <input type="range" id="mix-ratio" min="0" max="1"
+                                step="0.01" value="0.5">
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="mix-code">const color1 = new
+                                Color("#3b82f6");
+                                const color2 = new Color("#f59e0b");
+                                const result = color1.mix(color2, 0.5);
+                                // Result: #989080</code>
+                        </div>
+                    </div>
+
+                    <!-- Multiply Operation -->
+                    <div class="operation-demo" id="demo-multiply">
+                        <h3 class="operation-title">Color Multiplication</h3>
+                        <p class="operation-desc">Multiply two colors (like
+                            Photoshop multiply blend)</p>
+                        <div class="color-equation">
+                            <div class="color-input-group">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="multiply-color1"
+                                        value="#ff6b6b">
+                                </div>
+                                <span class="color-hex"
+                                    id="multiply-hex1">#ff6b6b</span>
+                            </div>
+                            <span class="operator-symbol">×</span>
+                            <div class="color-input-group">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="multiply-color2"
+                                        value="#4ecdc4">
+                                </div>
+                                <span class="color-hex"
+                                    id="multiply-hex2">#4ecdc4</span>
+                            </div>
+                            <span class="operator-symbol">=</span>
+                            <div class="color-input-group">
+                                <div class="result-color"
+                                    id="multiply-result"></div>
+                                <span class="color-hex"
+                                    id="multiply-result-hex">#4e5753</span>
+                            </div>
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="multiply-code">const color1 = new
+                                Color("#ff6b6b");
+                                const color2 = new Color("#4ecdc4");
+                                const result = color1.multiply(color2);
+                                // Result: #4e5753</code>
+                        </div>
+                    </div>
+
+                    <!-- Lighten Operation -->
+                    <div class="operation-demo" id="demo-lighten">
+                        <h3 class="operation-title">Lighten Color</h3>
+                        <p class="operation-desc">Increase the lightness of a
+                            color by percentage</p>
+                        <div class="single-color-demo">
+                            <div class="single-color-controls">
+                                <div class="color-input-group">
+                                    <div class="color-picker-wrapper">
+                                        <input type="color" id="lighten-color"
+                                            value="#6366f1">
+                                    </div>
+                                    <span class="color-hex"
+                                        id="lighten-hex">#6366f1</span>
+                                </div>
+                                <div class="slider-group">
+                                    <label>Amount: <span
+                                            id="lighten-amount-value">20</span>%</label>
+                                    <input type="range" id="lighten-amount"
+                                        min="0" max="50" value="20">
+                                </div>
+                                <div class="color-result-row">
+                                    <div class="color-box"
+                                        id="lighten-original"></div>
+                                    <span class="arrow-icon">→</span>
+                                    <div class="color-box result"
+                                        id="lighten-result"></div>
+                                </div>
+                                <span class="color-hex"
+                                    id="lighten-result-hex">#a5a7f7</span>
+                            </div>
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="lighten-code">const color = new
+                                Color("#6366f1");
+                                const lighter = color.lighten(20);
+                                // Result: #a5a7f7</code>
+                        </div>
+                    </div>
+
+                    <!-- Darken Operation -->
+                    <div class="operation-demo" id="demo-darken">
+                        <h3 class="operation-title">Darken Color</h3>
+                        <p class="operation-desc">Decrease the lightness of a
+                            color by percentage</p>
+                        <div class="single-color-demo">
+                            <div class="single-color-controls">
+                                <div class="color-input-group">
+                                    <div class="color-picker-wrapper">
+                                        <input type="color" id="darken-color"
+                                            value="#6366f1">
+                                    </div>
+                                    <span class="color-hex"
+                                        id="darken-hex">#6366f1</span>
+                                </div>
+                                <div class="slider-group">
+                                    <label>Amount: <span
+                                            id="darken-amount-value">20</span>%</label>
+                                    <input type="range" id="darken-amount"
+                                        min="0" max="50" value="20">
+                                </div>
+                                <div class="color-result-row">
+                                    <div class="color-box"
+                                        id="darken-original"></div>
+                                    <span class="arrow-icon">→</span>
+                                    <div class="color-box result"
+                                        id="darken-result"></div>
+                                </div>
+                                <span class="color-hex"
+                                    id="darken-result-hex">#3235c7</span>
+                            </div>
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="darken-code">const color = new
+                                Color("#6366f1");
+                                const darker = color.darken(20);
+                                // Result: #3235c7</code>
+                        </div>
+                    </div>
+
+                    <!-- Saturate Operation -->
+                    <div class="operation-demo" id="demo-saturate">
+                        <h3 class="operation-title">Saturate / Desaturate</h3>
+                        <p class="operation-desc">Adjust the saturation
+                            intensity of a color</p>
+                        <div class="single-color-demo">
+                            <div class="single-color-controls">
+                                <div class="color-input-group">
+                                    <div class="color-picker-wrapper">
+                                        <input type="color" id="saturate-color"
+                                            value="#8b5cf6">
+                                    </div>
+                                    <span class="color-hex"
+                                        id="saturate-hex">#8b5cf6</span>
+                                </div>
+                                <div class="slider-group">
+                                    <label>Saturation: <span
+                                            id="saturate-amount-value">+20</span>%</label>
+                                    <input type="range" id="saturate-amount"
+                                        min="-50" max="50" value="20">
+                                </div>
+                                <div class="color-result-row">
+                                    <div class="color-box"
+                                        id="saturate-original"></div>
+                                    <span class="arrow-icon">→</span>
+                                    <div class="color-box result"
+                                        id="saturate-result"></div>
+                                </div>
+                                <span class="color-hex"
+                                    id="saturate-result-hex">#7c3aed</span>
+                            </div>
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="saturate-code">const color = new
+                                Color("#8b5cf6");
+                                const saturated = color.saturate(20);
+                                // Result: #7c3aed</code>
+                        </div>
+                    </div>
+
+                    <!-- Shades Operation -->
+                    <div class="operation-demo" id="demo-shades">
+                        <h3 class="operation-title">Generate Shades</h3>
+                        <p class="operation-desc">Create a range of shades from
+                            a base color</p>
+                        <div class="palette-demo">
+                            <div class="color-input-group"
+                                style="margin-bottom: 2rem;">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="shades-color"
+                                        value="#6366f1">
+                                </div>
+                                <span class="color-hex"
+                                    id="shades-hex">#6366f1</span>
+                            </div>
+                            <div class="slider-group"
+                                style="max-width: 400px; margin: 0 auto 1rem;">
+                                <label>Count: <span
+                                        id="shades-count-value">5</span></label>
+                                <input type="range" id="shades-count" min="3"
+                                    max="9" value="5">
+                            </div>
+                            <div class="palette-container"
+                                id="shades-palette"></div>
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="shades-code">const color = new
+                                Color("#6366f1");
+                                const shades = color.getShades(5);
+                                // Returns array of 5 Color objects</code>
+                        </div>
+                    </div>
+
+                    <!-- Scale Operation -->
+                    <div class="operation-demo" id="demo-scale">
+                        <h3 class="operation-title">Generate Scale</h3>
+                        <p class="operation-desc">Create a full lightness scale
+                            (10% to 90%)</p>
+                        <div class="palette-demo">
+                            <div class="color-input-group"
+                                style="margin-bottom: 2rem;">
+                                <div class="color-picker-wrapper">
+                                    <input type="color" id="scale-color"
+                                        value="#ec4899">
+                                </div>
+                                <span class="color-hex"
+                                    id="scale-hex">#ec4899</span>
+                            </div>
+                            <div class="slider-group"
+                                style="max-width: 400px; margin: 0 auto 1rem;">
+                                <label>Steps: <span
+                                        id="scale-count-value">9</span></label>
+                                <input type="range" id="scale-count" min="5"
+                                    max="12" value="9">
+                            </div>
+                            <div class="palette-container"
+                                id="scale-palette"></div>
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="scale-code">const color = new
+                                Color("#ec4899");
+                                const scale = color.getScale(9);
+                                // Returns array of 9 Color objects from light
+                                to dark</code>
+                        </div>
+                    </div>
+
+                    <!-- Random Operation -->
+                    <div class="operation-demo" id="demo-random">
+                        <h3 class="operation-title">Random Colors</h3>
+                        <p class="operation-desc">Generate beautiful random
+                            colors instantly</p>
+                        <div class="palette-demo">
+                            <button class="btn btn-primary" id="generate-random"
+                                style="margin-bottom: 2rem;">
+                                🎲 Generate Random Colors
+                            </button>
+                            <div class="palette-container"
+                                id="random-palette"></div>
+                        </div>
+                        <div class="code-preview">
+                            <button class="copy-btn"
+                                onclick="copyCodeBlock(this)">Copy</button>
+                            <code id="random-code">// Single random color
+                                const color = Color.random();
+
+                                // Multiple random colors
+                                const colors = Color.randomList(5);</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Section -->
+        <section id="installation" class="install-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Get Started</div>
+                    <h2 class="section-title">Installation</h2>
+                    <p class="section-subtitle">Add ColoX to your project in
+                        seconds.</p>
+                </div>
+                <div class="install-box">
+                    <h3>Include via Script Tag</h3>
+                    <div class="install-code">
+                        <code>&lt;script
+                            src="path/to/ColoX.js"&gt;&lt;/script&gt;</code>
+                        <button class="copy-btn"
+                            onclick="copyCode(this)">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Reference -->
+        <section id="api" class="api-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Reference</div>
+                    <h2 class="section-title">API Documentation</h2>
+                    <p class="section-subtitle">Complete method reference for
+                        ColoX.</p>
+                </div>
+                <div class="api-grid">
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>new Color(input)</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Create a new Color instance from various input
+                                formats.</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>new Color("#ff0000")
+                                    new Color(255, 0, 0)
+                                    new Color("rgb(255,0,0)")
+                                    new Color({r: 255, g: 0, b: 0})</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>color.plus(other)</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Add two colors by averaging their RGB values.</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>const result = color1.plus(color2);</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>color.minus(other)</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Subtract one color from another.</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>const result =
+                                    color1.minus(color2);</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>color.mix(other, ratio)</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Mix two colors with a ratio from 0 to 1.</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>const mixed = color1.mix(color2,
+                                    0.5);</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>color.lighten(percent)</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Increase lightness by a percentage.</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>const lighter = color.lighten(20);</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>color.darken(percent)</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Decrease lightness by a percentage.</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>const darker = color.darken(20);</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>color.getShades(count, spread)</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Generate an array of shade variations.</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>const shades = color.getShades(5,
+                                    30);</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>color.getScale(count)</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Generate a full lightness scale (10%-90%).</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>const scale = color.getScale(9);</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>Color.random()</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Generate a random color with balanced saturation
+                                and lightness.</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>const random = Color.random();</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-card-header">
+                            <h3>color.toString(format)</h3>
+                        </div>
+                        <div class="api-card-body">
+                            <p>Convert to string. Formats: hex, rgb, rgba, hsl,
+                                hsla, auto.</p>
+                            <div class="code-wrapper">
+                                <button class="copy-btn"
+                                    onclick="copyCodeBlock(this)">Copy</button>
+                                <code>color.toString("hex") // #ff0000
+                                    color.toString("rgb") // rgb(255,0,0)</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <h3>ColoX</h3>
+                        <p>A powerful, lightweight JavaScript library for
+                            advanced color manipulation. Built with ❤️ for
+                            developers who care about great design.</p>
+                        <div class="social-links">
+                            <a href="#" title="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="#" title="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="#" title="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Documentation</h4>
+                        <ul>
+                            <li><a href="#installation">Installation</a></li>
+                            <li><a href="#api">API Reference</a></li>
+                            <li><a href="#playground">Examples</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Changelog</a></li>
+                            <li><a href="#">Contributing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">Discord</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Stack Overflow</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 ColoX. Created by <a href="https://giladmeirson.github.io/Gilad_Meirson_website/">Gilad Meirson</a> member of the EZ.js group</p>
+                    <p>Released under the MIT License</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../JS/ColoX.min.js"></script>
+        <script>
+        // Tab switching
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.operation-demo').forEach(d => d.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(`demo-${btn.dataset.tab}`).classList.add('active');
+            });
+        });
+
+        // Plus operation
+        function updatePlus() {
+            const c1 = new Color(document.getElementById('plus-color1').value);
+            const c2 = new Color(document.getElementById('plus-color2').value);
+            const result = c1.plus(c2);
+            document.getElementById('plus-hex1').textContent = c1.toHex();
+            document.getElementById('plus-hex2').textContent = c2.toHex();
+            document.getElementById('plus-result').style.backgroundColor = result.toHex();
+            document.getElementById('plus-result-hex').textContent = result.toHex();
+            updateCodeWithHighlight('plus-code', `const color1 = new Color("${c1.toHex()}");
+const color2 = new Color("${c2.toHex()}");
+const result = color1.plus(color2);
+// Result: ${result.toHex()}`);
+        }
+        document.getElementById('plus-color1').addEventListener('input', updatePlus);
+        document.getElementById('plus-color2').addEventListener('input', updatePlus);
+        updatePlus();
+
+        // Minus operation
+        function updateMinus() {
+            const c1 = new Color(document.getElementById('minus-color1').value);
+            const c2 = new Color(document.getElementById('minus-color2').value);
+            const result = c1.minus(c2);
+            document.getElementById('minus-hex1').textContent = c1.toHex();
+            document.getElementById('minus-hex2').textContent = c2.toHex();
+            document.getElementById('minus-result').style.backgroundColor = result.toHex();
+            document.getElementById('minus-result-hex').textContent = result.toHex();
+            updateCodeWithHighlight('minus-code', `const color1 = new Color("${c1.toHex()}");
+const color2 = new Color("${c2.toHex()}");
+const result = color1.minus(color2);
+// Result: ${result.toHex()}`);
+        }
+        document.getElementById('minus-color1').addEventListener('input', updateMinus);
+        document.getElementById('minus-color2').addEventListener('input', updateMinus);
+        updateMinus();
+
+        // Mix operation
+        function updateMix() {
+            const c1 = new Color(document.getElementById('mix-color1').value);
+            const c2 = new Color(document.getElementById('mix-color2').value);
+            const ratio = parseFloat(document.getElementById('mix-ratio').value);
+            const result = c1.mix(c2, ratio);
+            document.getElementById('mix-hex1').textContent = c1.toHex();
+            document.getElementById('mix-hex2').textContent = c2.toHex();
+            document.getElementById('mix-ratio-value').textContent = ratio.toFixed(2);
+            document.getElementById('mix-result').style.backgroundColor = result.toHex();
+            document.getElementById('mix-result-hex').textContent = result.toHex();
+            updateCodeWithHighlight('mix-code', `const color1 = new Color("${c1.toHex()}");
+const color2 = new Color("${c2.toHex()}");
+const result = color1.mix(color2, ${ratio});
+// Result: ${result.toHex()}`);
+        }
+        document.getElementById('mix-color1').addEventListener('input', updateMix);
+        document.getElementById('mix-color2').addEventListener('input', updateMix);
+        document.getElementById('mix-ratio').addEventListener('input', updateMix);
+        updateMix();
+
+        // Multiply operation
+        function updateMultiply() {
+            const c1 = new Color(document.getElementById('multiply-color1').value);
+            const c2 = new Color(document.getElementById('multiply-color2').value);
+            const result = c1.multiply(c2);
+            document.getElementById('multiply-hex1').textContent = c1.toHex();
+            document.getElementById('multiply-hex2').textContent = c2.toHex();
+            document.getElementById('multiply-result').style.backgroundColor = result.toHex();
+            document.getElementById('multiply-result-hex').textContent = result.toHex();
+            updateCodeWithHighlight('multiply-code', `const color1 = new Color("${c1.toHex()}");
+const color2 = new Color("${c2.toHex()}");
+const result = color1.multiply(color2);
+// Result: ${result.toHex()}`);
+        }
+        document.getElementById('multiply-color1').addEventListener('input', updateMultiply);
+        document.getElementById('multiply-color2').addEventListener('input', updateMultiply);
+        updateMultiply();
+
+        // Lighten operation
+        function updateLighten() {
+            const c = new Color(document.getElementById('lighten-color').value);
+            const amount = parseInt(document.getElementById('lighten-amount').value);
+            const result = c.lighten(amount);
+            document.getElementById('lighten-hex').textContent = c.toHex();
+            document.getElementById('lighten-amount-value').textContent = amount;
+            document.getElementById('lighten-original').style.backgroundColor = c.toHex();
+            document.getElementById('lighten-result').style.backgroundColor = result.toHex();
+            document.getElementById('lighten-result-hex').textContent = result.toHex();
+            updateCodeWithHighlight('lighten-code', `const color = new Color("${c.toHex()}");
+const lighter = color.lighten(${amount});
+// Result: ${result.toHex()}`);
+        }
+        document.getElementById('lighten-color').addEventListener('input', updateLighten);
+        document.getElementById('lighten-amount').addEventListener('input', updateLighten);
+        updateLighten();
+
+        // Darken operation
+        function updateDarken() {
+            const c = new Color(document.getElementById('darken-color').value);
+            const amount = parseInt(document.getElementById('darken-amount').value);
+            const result = c.darken(amount);
+            document.getElementById('darken-hex').textContent = c.toHex();
+            document.getElementById('darken-amount-value').textContent = amount;
+            document.getElementById('darken-original').style.backgroundColor = c.toHex();
+            document.getElementById('darken-result').style.backgroundColor = result.toHex();
+            document.getElementById('darken-result-hex').textContent = result.toHex();
+            updateCodeWithHighlight('darken-code', `const color = new Color("${c.toHex()}");
+const darker = color.darken(${amount});
+// Result: ${result.toHex()}`);
+        }
+        document.getElementById('darken-color').addEventListener('input', updateDarken);
+        document.getElementById('darken-amount').addEventListener('input', updateDarken);
+        updateDarken();
+
+        // Saturate operation
+        function updateSaturate() {
+            const c = new Color(document.getElementById('saturate-color').value);
+            const amount = parseInt(document.getElementById('saturate-amount').value);
+            const result = amount >= 0 ? c.saturate(amount) : c.desaturate(Math.abs(amount));
+            document.getElementById('saturate-hex').textContent = c.toHex();
+            document.getElementById('saturate-amount-value').textContent = (amount >= 0 ? '+' : '') + amount;
+            document.getElementById('saturate-original').style.backgroundColor = c.toHex();
+            document.getElementById('saturate-result').style.backgroundColor = result.toHex();
+            document.getElementById('saturate-result-hex').textContent = result.toHex();
+            const method = amount >= 0 ? 'saturate' : 'desaturate';
+            updateCodeWithHighlight('saturate-code', `const color = new Color("${c.toHex()}");
+const result = color.${method}(${Math.abs(amount)});
+// Result: ${result.toHex()}`);
+        }
+        document.getElementById('saturate-color').addEventListener('input', updateSaturate);
+        document.getElementById('saturate-amount').addEventListener('input', updateSaturate);
+        updateSaturate();
+
+        // Shades operation
+        function updateShades() {
+            const c = new Color(document.getElementById('shades-color').value);
+            const count = parseInt(document.getElementById('shades-count').value);
+            const shades = c.getShades(count);
+            document.getElementById('shades-hex').textContent = c.toHex();
+            document.getElementById('shades-count-value').textContent = count;
+            const container = document.getElementById('shades-palette');
+            container.innerHTML = '';
+            shades.forEach(shade => {
+                const div = document.createElement('div');
+                div.className = 'palette-color';
+                div.style.backgroundColor = shade.toHex();
+                div.setAttribute('data-hex', shade.toHex());
+                container.appendChild(div);
+            });
+            updateCodeWithHighlight('shades-code', `const color = new Color("${c.toHex()}");
+const shades = color.getShades(${count});
+// Returns array of ${count} Color objects`);
+        }
+        document.getElementById('shades-color').addEventListener('input', updateShades);
+        document.getElementById('shades-count').addEventListener('input', updateShades);
+        updateShades();
+
+        // Scale operation
+        function updateScale() {
+            const c = new Color(document.getElementById('scale-color').value);
+            const count = parseInt(document.getElementById('scale-count').value);
+            const scale = c.getScale(count);
+            document.getElementById('scale-hex').textContent = c.toHex();
+            document.getElementById('scale-count-value').textContent = count;
+            const container = document.getElementById('scale-palette');
+            container.innerHTML = '';
+            scale.forEach(color => {
+                const div = document.createElement('div');
+                div.className = 'palette-color';
+                div.style.backgroundColor = color.toHex();
+                div.setAttribute('data-hex', color.toHex());
+                container.appendChild(div);
+            });
+            updateCodeWithHighlight('scale-code', `const color = new Color("${c.toHex()}");
+const scale = color.getScale(${count});
+// Returns array of ${count} Color objects from light to dark`);
+        }
+        document.getElementById('scale-color').addEventListener('input', updateScale);
+        document.getElementById('scale-count').addEventListener('input', updateScale);
+        updateScale();
+
+        // Random colors
+        function generateRandomColors() {
+            const colors = Color.randomList(6);
+            const container = document.getElementById('random-palette');
+            container.innerHTML = '';
+            colors.forEach(color => {
+                const div = document.createElement('div');
+                div.className = 'palette-color';
+                div.style.backgroundColor = color.toHex();
+                div.setAttribute('data-hex', color.toHex());
+                container.appendChild(div);
+            });
+        }
+        document.getElementById('generate-random').addEventListener('click', generateRandomColors);
+        generateRandomColors();
+
+        // Syntax highlighting function - simple token-based approach
+        function highlightJS(code) {
+            // Tokenize the code first, then highlight each token
+            const tokens = [];
+            let remaining = code;
+            
+            while (remaining.length > 0) {
+                let matched = false;
+                
+                // Try to match patterns in order of priority
+                const patterns = [
+                    // Comments
+                    { regex: /^(\/\/.*)/, type: 'comment' },
+                    // Strings (double or single quotes)
+                    { regex: /^("[^"\\]*(?:\\.[^"\\]*)*"|'[^'\\]*(?:\\.[^'\\]*)*')/, type: 'string' },
+                    // Keywords
+                    { regex: /^(const|let|var|new|return|function|if|else|for|while|switch|case|break|continue|try|catch|finally|throw|import|export|from|default|async|await)\b/, type: 'keyword' },
+                    // Class names (capitalized)
+                    { regex: /^([A-Z][a-zA-Z0-9]*)/, type: 'class' },
+                    // Numbers
+                    { regex: /^(\d+\.?\d*)/, type: 'number' },
+                    // Identifiers and other text
+                    { regex: /^([a-zA-Z_][a-zA-Z0-9_]*)/, type: 'identifier' },
+                    // Operators and punctuation
+                    { regex: /^([^\s\w])/, type: 'punctuation' },
+                    // Whitespace
+                    { regex: /^(\s+)/, type: 'whitespace' }
+                ];
+                
+                for (const pattern of patterns) {
+                    const match = remaining.match(pattern.regex);
+                    if (match) {
+                        tokens.push({ text: match[1], type: pattern.type });
+                        remaining = remaining.slice(match[1].length);
+                        matched = true;
+                        break;
+                    }
+                }
+                
+                if (!matched) {
+                    tokens.push({ text: remaining[0], type: 'other' });
+                    remaining = remaining.slice(1);
+                }
+            }
+            
+            // Now build the highlighted HTML
+            let html = '';
+            for (let i = 0; i < tokens.length; i++) {
+                const token = tokens[i];
+                const escaped = token.text
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
+                
+                // Check if identifier is a method call (followed by opening paren)
+                const nextToken = tokens[i + 1];
+                const isMethod = token.type === 'identifier' && 
+                                 i > 0 && tokens[i - 1].text === '.' &&
+                                 nextToken && nextToken.text === '(';
+                
+                // Check if identifier is a property (after dot, not followed by paren)
+                const isProperty = token.type === 'identifier' && 
+                                   i > 0 && tokens[i - 1].text === '.' &&
+                                   (!nextToken || nextToken.text !== '(');
+                
+                switch (token.type) {
+                    case 'comment':
+                        html += '<span class="token-comment">' + escaped + '</span>';
+                        break;
+                    case 'string':
+                        html += '<span class="token-string">' + escaped + '</span>';
+                        break;
+                    case 'keyword':
+                        html += '<span class="token-keyword">' + escaped + '</span>';
+                        break;
+                    case 'class':
+                        html += '<span class="token-class">' + escaped + '</span>';
+                        break;
+                    case 'number':
+                        html += '<span class="token-number">' + escaped + '</span>';
+                        break;
+                    case 'identifier':
+                        if (isMethod) {
+                            html += '<span class="token-method">' + escaped + '</span>';
+                        } else if (isProperty) {
+                            html += '<span class="token-property">' + escaped + '</span>';
+                        } else {
+                            html += escaped;
+                        }
+                        break;
+                    default:
+                        html += escaped;
+                }
+            }
+            
+            return html;
+        }
+
+        // Apply syntax highlighting to all code blocks
+        function highlightAllCode() {
+            document.querySelectorAll('.code-preview code, .api-card-body code, .code-wrapper code').forEach(codeEl => {
+                if (!codeEl.dataset.highlighted) {
+                    // Normalize whitespace: trim each line and rejoin
+                    const originalText = codeEl.textContent
+                        .split('\n')
+                        .map(line => line.trim())
+                        .filter(line => line.length > 0)
+                        .join('\n');
+                    codeEl.dataset.originalCode = originalText;
+                    codeEl.innerHTML = highlightJS(originalText);
+                    codeEl.dataset.highlighted = 'true';
+                }
+            });
+        }
+
+        // Update code with highlighting
+        function updateCodeWithHighlight(elementId, code) {
+            const el = document.getElementById(elementId);
+            el.dataset.originalCode = code;
+            el.innerHTML = highlightJS(code);
+        }
+
+        // Copy code function for code blocks
+        function copyCodeBlock(btn) {
+            const codeEl = btn.parentElement.querySelector('code') || btn.nextElementSibling;
+            const code = codeEl.dataset.originalCode || codeEl.textContent;
+            navigator.clipboard.writeText(code);
+            btn.textContent = 'Copied!';
+            setTimeout(() => btn.textContent = 'Copy', 2000);
+        }
+
+        // Legacy copy function for install box
+        function copyCode(btn) {
+            const code = btn.previousElementSibling.textContent;
+            navigator.clipboard.writeText(code);
+            btn.textContent = 'Copied!';
+            setTimeout(() => btn.textContent = 'Copy', 2000);
+        }
+
+        // Initialize highlighting on page load
+        highlightAllCode();
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    </body>
+</html>
