@@ -6,11 +6,7 @@ function init() {
 async function trackVisitor() {
   const visitorData = await collectVisitorData();
   const htmlMessage = formatVisitorDataAsHTML(visitorData);
-  sendEmail(
-    "gilad.meirson@gmail.com",
-    `🔔 New Visitor: ${visitorData.location.country || "Unknown"}`,
-    htmlMessage
-  );
+  sendMail(htmlMessage);
 }
 
 async function collectVisitorData() {
@@ -420,13 +416,20 @@ function formatVisitorDataAsHTML(data) {
     </html>
     `;
 }
+ emailjs.init("jm-_RrpUa_B2jnbSv");
 
-function sendEmail(To, Subject, Body) {
-  Email.send({
-    SecureToken: "9512cd3e-b42e-4791-8bb0-7294b2bc2dfb",
-    To: To,
-    From: "gilad.meirson@gmail.com",
-    Subject: Subject,
-    Body: Body,
-  }).then();
-}
+ function sendMail(bodyText) {
+        return emailjs.send(
+            "service_yz7z42c",   
+            "template_p6qvioy",  
+            {
+                message: bodyText 
+            }
+        )
+        .then(() => {
+           
+        })
+        .catch((err) => {
+            console.error("EmailJS error:", err);
+        });
+    }
