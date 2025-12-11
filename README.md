@@ -420,7 +420,7 @@ Built with ❤️ for the developer community.
 <p align="center">
   <strong>Ready to transform your color workflow?</strong>
   <br/>
-  <a href="Pages/index.html">Try the Interactive Demo →</a>
+  <a href="https://giladmeirson.github.io/ColoX/Pages/index.html">Try the Interactive Demo →</a>
 </p>
 
 <p align="center">
